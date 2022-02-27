@@ -16,7 +16,7 @@ class music(commands.Cog):
         else:
             await ctx.voice_channel.move_to(voice_channel)
         
-    @commands.command()
+    @commands.command(aliases = ['свободен'])
     async def disconnect(self,ctx):
         await ctx.voice_client.disconnect()
 
